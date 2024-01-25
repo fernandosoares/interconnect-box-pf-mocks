@@ -3,7 +3,7 @@ import { QueryByDocNumber } from './pf.types';
 
 @Injectable()
 export class PfUtils {
-  switchDoc(doc: string): QueryByDocNumber | null {
+  searchDoc(doc: string): QueryByDocNumber | null {
     switch (doc) {
       case '83332845071':
         return {

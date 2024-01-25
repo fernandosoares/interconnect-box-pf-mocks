@@ -6,6 +6,6 @@ import { PfUtils } from './pf.utils';
 export class PfService {
   constructor(private readonly pfUtils: PfUtils) {}
   queryByDocNumber(doc: string): QueryByDocNumber {
-    return this.pfUtils.switchDoc(doc);
+    return this.pfUtils.searchDoc(doc);
   }
 }
