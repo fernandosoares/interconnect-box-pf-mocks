@@ -1,9 +1,10 @@
 import {
   Body,
   Controller,
-  Get,
+  HttpCode,
   HttpException,
   HttpStatus,
+  Post,
 } from '@nestjs/common';
 import { PfDto } from './pf.dto';
 import { PfService } from './pf.service';
@@ -12,7 +13,8 @@ import { PfService } from './pf.service';
 export class PfController {
   constructor(private readonly pfService: PfService) {}
 
-  @Get('/query')
+  @Post('/query')
+  @HttpCode(HttpStatus.OK)
   query(@Body() data: PfDto) {
     const query = this.pfService.queryByDocNumber(data.documento);
     if (!query || query === null) {
