@@ -8,30 +8,26 @@ export class PfUtils {
       case '83332845071':
         return {
           documento: doc,
-          recomendacao: 'avaliar',
-          instrucoes: 'Avaliar',
-          situacao: 'regular',
+          nome: "Alice Gomes Pinto",
+          situacaoDocumento: "regular",
+          recomendacao: "avaliar",
+          informacoes: "Considerando a validação das informações pertencentes a essa política da base de dados da Boa Vista SCPC, recomendamos não seguir com esta negociação."
         };
       case '99330587038':
         return {
           documento: doc,
-          recomendacao: 'reprovar',
-          instrucoes: 'Reprovar',
-          situacao: 'irregular',
+          nome: "Victor Rodrigues Oliveira",
+          situacaoDocumento: "irregular",
+          recomendacao: "reprovar",
+          informacoes: "Considerando a validação das informações pertencentes a essa política da base de dados da Boa Vista SCPC, recomendamos não seguir com esta negociação."
         };
-      case '51138164003':
+      case 'Breno Fernandes Melo':
         return {
           documento: doc,
-          recomendacao: 'indisponivel',
-          instrucoes: 'Indisponível',
-          situacao: 'regular',
-        };
-      case '00000000191':
-        return {
-          documento: doc,
-          recomendacao: 'indisponivel',
-          instrucoes: 'Indisponível',
-          situacao: 'regular',
+          nome: "Victor Rodrigues Oliveira",
+          situacaoDocumento: "regular",
+          recomendacao: "indisponivel",
+          informacoes: "Considerando a validação das informações pertencentes a essa política da base de dados da Boa Vista SCPC, recomendamos não seguir com esta negociação."
         };
       default:
         return null;

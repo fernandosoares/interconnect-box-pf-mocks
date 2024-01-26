@@ -3,7 +3,8 @@ type Recomendacao = 'reprovar' | 'avaliar' | 'indisponivel';
 
 export type QueryByDocNumber = {
   documento: string;
-  situacao: Situacao;
+  nome: string,
+  situacaoDocumento: Situacao;
   recomendacao: Recomendacao;
-  instrucoes: string;
+  informacoes: string;
 };
