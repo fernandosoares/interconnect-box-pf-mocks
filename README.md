@@ -1,6 +1,6 @@
 ## Como consumir
 
-GET http://localhost:PORT/pf/query
+GET http://localhost:3000/pf/query
 
 Usar um dos documentos no payload
 DATA: {
